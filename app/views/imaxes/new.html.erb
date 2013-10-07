@@ -1,0 +1,18 @@
+<html>
+<%= form_for :imaxe, url: imaxes_path do |i| %>
+  <p>
+    <%= i.label :nome %><br>
+    <%= i.text_field :nome %>
+  </p>
+ 
+  <p>
+    <%= i.label :path %><br>
+    <%= i.text_area :path %>
+  </p>
+ 
+  <p>
+    <%= i.submit %>
+  </p>
+<% end %>
+
+</html>

@@ -1,0 +1,2 @@
+module ImaxesHelper
+end

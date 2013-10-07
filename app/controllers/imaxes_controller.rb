@@ -1,5 +1,6 @@
 class ImaxesController < ApplicationController
   def index
+    @imaxes = Imaxe.all
   end
   def new
   end

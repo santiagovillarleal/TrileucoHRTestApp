@@ -1,1 +1,16 @@
-<h1> imaxes index </h1>
+<h1> Listado de imaxes </h1>
+<%= link_to "new image", new_imax_path %>
+<table>
+  <tr>
+    <th>Nome</th>
+    <th>Imaxe</th>
+  </tr>
+  <% @imaxes.each do |imaxe| %>
+    <tr>
+      <td><%= imaxe.nome %></td>
+      <td><%= image_tag imaxe.file.url %></td>
+      <td><%= image_tag imaxe.file.url(:thumb) %></td>
+      <td><%= image_tag imaxe.file.url(:medium) %></td>
+    <tr>
+  <% end %>
+</table>
